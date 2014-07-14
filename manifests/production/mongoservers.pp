@@ -1,6 +1,10 @@
 
-node "ec2-54-193-121-212.us-west-1.compute.amazonaws.com" {
+
+node "ec2-54-183-118-104.us-west-1.compute.amazonaws.com" {
 	include profile::mongomaster
 	include profile::rockmongonode
-	notify {"Something to notify":}
+}
+
+node "ec2-54-215-233-228.us-west-1.compute.amazonaws.com" {
+	include profile::mongoreplica
 }
